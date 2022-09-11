@@ -13,6 +13,8 @@ namespace InventoryManager.Api.Profiles
 
             CreateMap<Entites.Category, Models.CategoryDto>();
             CreateMap<Models.CategoryDto, Entites.Category>();
+            CreateMap<Models.CategoryWithStockDto, Entites.Category>();
+            CreateMap<Entites.Category, Models.CategoryWithStockDto>();
         }
     }
 }

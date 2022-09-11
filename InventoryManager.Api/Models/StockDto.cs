@@ -6,7 +6,7 @@ namespace InventoryManager.Api.Models
 {
     public class StockDto
     {
-        //public int Id { get; set; }
+        public int Id { get; set; }
 
         [Required]
         [MaxLength(50)]

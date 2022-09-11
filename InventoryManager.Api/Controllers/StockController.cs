@@ -18,7 +18,7 @@ namespace InventoryManager.Api.Controllers
         public StockController(IStockRepository stockRepository, IMapper mapper)
         {
             _stockRepository = stockRepository ?? throw new ArgumentNullException(nameof(stockRepository));
-            _mapper = mapper;
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
 
         [HttpGet()]
